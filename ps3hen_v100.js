@@ -137,7 +137,7 @@ var gadget_mod14_addr=0;
 var gadget_mod15_addr=0;
 var gadget_mod16_addr=0;
 var xtra_data;var stack_frame;var jump_2;var jump_1;var xtra_data_addr;var stack_frame_addr;var jump_2_addr;var jump_1_addr;
-var fail_msg_frag=hr+"<h1><b>Dar triangulo, actualizar e inicialice HEN otra vez</h1><h2><span style='color:#000000;'><a href=\"javascript:window.location.reload();\">Actualice esta pagina</a> y pruebe de nuevo...</span></b></h2>";
+var fail_msg_frag=hr+"<h1><b>Dar triangulo, luego actualizar e inicializar otra vez</h1><h2><span style='color:#000000;'><a href=\"javascript:window.location.reload();\">Actualice esta pagina</a> y pruebe de nuevo...</span></b></h2>";
 var progress_msg_frag1=hr+"<h1><b>Inicializando..."+br+"<span style='color:#000000;'>Progreso: ";
 var progress_msg_frag2='%, por favor espere...</span></b></h1>';
 
