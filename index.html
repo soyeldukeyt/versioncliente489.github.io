@@ -3,7 +3,7 @@
 <head>
 <script src="ps3hen_v100.js"></script>
 <meta charset="UTF-8"> 
-<title>El HEN de Duke</title>
+<title>MateARS</title>
 <script>
 function downloadhen()
 {
@@ -88,7 +88,7 @@ function initROP(init)
 		if((j2===jump_2)&&(j1===jump_1)&&(x===xtra_data)&&(sf===stack_frame))
 		{
 			if(t_out!==0){clearTimeout(t_out);}
-			showResult(hr+"<h1><b><font color=%22386E38%22>Todo correcto, presionar Instalar HEN.</font></b></h1><h3><b><font color=%22000000%22><span style='color:#000000;'>Ahora ya puede lanzar HEN</span></b></h3>");
+			showResult(hr+"<h1><b><font color=%22386E38%22>Todo correcto, presionar Instalar.</font></b></h1><h3><b><font color=%22000000%22><span style='color:#000000;'>Ahora ya puede lanzar HEN</span></b></h3>");
 			enable_trigger();
 		}
 		else
@@ -112,24 +112,24 @@ function initROP(init)
 function triggerX()
 {
 		clearLogEntry();
-		showResult(hr+"<h2><b><span style='color:#000000;'>Instalando HEN...</span></b></h2>");
+		showResult(hr+"<h2><b><span style='color:#000000;'>Instalando...</span></b></h2>");
 		disable_all();
 		setTimeout(trigger,1000,jump_1_addr);
-		setTimeout(rop_exit_hen,5000,hr+"<h1><b><font color=%22386E38%22>HEN correctamente instalado</font></b></h1>","<h1><b><font color='red'>Presionar triangulo, actualizar y dar inicializar nuevamente.</font></b></h1>");
+		setTimeout(rop_exit_hen,5000,hr+"<h1><b><font color=%22386E38%22>Correctamente instalado</font></b></h1>","<h1><b><font color='red'>Presionar triangulo, actualizar y dar inicializar nuevamente.</font></b></h1>");
 		cleanGUI();
 }
 </script>
 </head>
 	<body id="bodyId" style="background-color:#FFD097" onload="javascript:downloadhen()">
 	<div id="headerId" style="color:#CC2010">
-	<h1>Muchas gracias por usar mi instalador, no olvides visitar mi canal Duke Mc</h1>
-	<span style="color:#000000">El PS3 HEN de DUKE</span><hr>
+	<h1>Muchas gracias por usar mi instalador</h1>
+	<span style="color:#000000">El PS3 Instalador de MateARS</span><hr>
 	<h3>Solo 4.89 HFW Firmware</h3>
 	<h2>Atención:<br>cerrar el navegador despues de instalar<br>Solo compatible con Firnware 4.89 hibrido, no usar en versiones anteriores.</font></h2>
 	<span style="color:#0055AA"><h3></font></h3><br>
 	<hr></div>
-	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>Inicializar HEN</button> | Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();"/><span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/></span></p>
-	<p><button id="btnTrigger" disabled="" type="button" onclick="triggerX();">Instalar HEN</button><span id="reset" style="visibility:hidden"> | <button id="btnReset" type="button" onclick="disable_trigger();">Reset</button></span></p>
+	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>Inicializar Instalador</button> | Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" checked="checked" onclick="autoclose();"/><span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/></span></p>
+	<p><button id="btnTrigger" disabled="" type="button" onclick="triggerX();">Instalar</button><span id="reset" style="visibility:hidden"> | <button id="btnReset" type="button" onclick="disable_trigger();">Reset</button></span></p>
 	<div id="result" style="color:#CC2010"></div><br>
 	<div id="log"></div>
 	<div id="exploit" ></div>
